@@ -216,7 +216,7 @@ cursor:pointer !important;
 	<div class="mt-3 mb-2 text-center text-white text-xl">
 		<%
 			String keywordSearch =(String) request.getAttribute("keywordSearch");
-		    if(!keywordSearch.isEmpty()) {
+		    if(keywordSearch!=null && !keywordSearch.isEmpty()) {
 		    	%>
 		    	<span>Results of search keyword : <span><%=keywordSearch %></span></span>
 		    	<%
